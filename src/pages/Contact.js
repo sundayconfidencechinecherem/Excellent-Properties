@@ -119,16 +119,16 @@ export default function Contact() {
                         <div className="social-links">
                             <h4>Follow Our Journey</h4>
                             <div className="social-icons">
-                                <a href="#" className="social-icon" aria-label="Facebook">
+                                <a href="https://facebook.com/yourpage"className="social-icon" aria-label="Facebook">
                                     <span>📘</span>
                                 </a>
-                                <a href="#" className="social-icon" aria-label="Instagram">
+                                <a href="https://instagram.com/yourpage" className="social-icon" aria-label="Instagram">
                                     <span>📸</span>
                                 </a>
-                                <a href="#" className="social-icon" aria-label="Twitter">
+                                <a href="https://twitter.com/yourpage" className="social-icon" aria-label="Twitter">
                                     <span>🐦</span>
                                 </a>
-                                <a href="#" className="social-icon" aria-label="LinkedIn">
+                                <a href="https://linkedin.com/yourpage" className="social-icon" aria-label="LinkedIn">
                                     <span>💼</span>
                                 </a>
                             </div>

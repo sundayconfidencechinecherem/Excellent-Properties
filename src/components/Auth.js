@@ -202,7 +202,7 @@ export default function Auth() {
                 <input type="checkbox" />
                 Remember me
               </label>
-              <a href="#" className="forgot-password">
+              <a href="/forgot-password" className="forgot-password">
                 Forgot password?
               </a>
             </div>

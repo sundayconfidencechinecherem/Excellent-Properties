@@ -14,13 +14,13 @@ export default function Home() {
     });
 
     const propertyTypes = ["all", "Apartment", "Villa", "Studio", "Duplex"];
-    const priceRanges = [
-        "all",
-        "under-50m",
-        "50m-100m",
-        "100m-200m",
-        "200m+"
-    ];
+    // const priceRanges = [
+    //     "all",
+    //     "under-50m",
+    //     "50m-100m",
+    //     "100m-200m",
+    //     "200m+"
+    // ];
     const bedroomOptions = ["all", "1", "2", "3", "4", "5+"];
     const locations = ["all", "Lagos", "Abuja", "Port Harcourt", "Enugu"];
     const statusOptions = ["all", "For Sale", "For Rent"];
