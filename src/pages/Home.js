@@ -102,9 +102,7 @@ export default function Home() {
                             onChange={(e) => setSearchTerm(e.target.value)}
                             className="search-input"
                         />
-                        <button className="btn search-btn">
-                            🔍 Search
-                        </button>
+                        <button className="btns search-btn"> Search</button>
                     </div>
                 </div>
             </div>

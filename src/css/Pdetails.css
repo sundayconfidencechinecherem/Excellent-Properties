@@ -15,7 +15,7 @@
   }
   
   .property-details h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #2c3e50;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #667eea, #764ba2);
@@ -38,7 +38,7 @@
     margin-top: 2rem;
     padding: 15px 30px;
     font-size: 1.1rem;
-    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    background: linear-gradient(135deg, #1e88e5 0%, #1e88e5 100%);
   }
   
   @media (max-width: 768px) {
@@ -54,3 +54,212 @@
       font-size: 2rem;
     }
   }
+  .property-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.property-details-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.property-image-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.property-image-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.favorite-btn.large {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.property-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.property-location {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.property-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+}
+
+.property-badges {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.property-type, .property-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.property-type {
+    background: #e8f5e8;
+    color: #27ae60;
+}
+
+.property-status {
+    background: #e3f2fd;
+    color: #3498db;
+}
+
+.property-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.stat-icon {
+    font-size: 1.2rem;
+}
+
+.property-details-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.description-section, .amenities-section, .agent-section {
+    margin-bottom: 2rem;
+}
+
+.description-section h2, .amenities-section h2, .agent-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.agent-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agent-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.contact-btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 968px) {
+    .property-details-header {
+        grid-template-columns: 1fr;
+    }
+    
+    .property-details-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .property-details {
+        padding: 1rem;
+    }
+    
+    .property-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Add to Pdetails.css */
+.favorite-btn.large {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.favorite-btn.large:hover {
+  transform: scale(1.1);
+  background: #fff0f0;
+}
+
+.favorite-btn.large.favorited {
+  background: #fff0f0;
+  color: #e74c3c;
+}
